@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乱世天狼的网页</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="container">
+    <span class="welcome">
+    </span>
+  </div>
+  <div class="link">
+    <a href="">more</a>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/typed.min.js"></script>
+  <script src="./js/autoAdapt.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.welcome', {
+        strings: ["Do one thing at a time and do well", "Shut up and show me the code"],
+        typeSpeed: 50
+      });
+    });
+    setTimeout(function(){
+      $('.link').show().addClass('animated rubberBand')
+    }, 8000)
+  </script>
+</body>
+</html>
