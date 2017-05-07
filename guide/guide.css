@@ -1,0 +1,93 @@
+.swipeContainer{
+  background-image: linear-gradient(120deg, rgb(213, 67, 84) 20%, rgb(233, 61, 72) 80%);
+  overflow: scroll;
+  position: relative;
+}
+.swipeContainer .swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.swipeContainer .referContainer{
+  margin-top: -60px;
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 0.16rem;
+  z-index: 2;
+}
+.swipeContainer .referContainer ul a{
+  background: transparent;
+  border: 3px solid #0a3055;
+  border-radius: 50%;
+  display: block;
+  height: .1rem;
+  margin-bottom: .1rem;
+  position: relative;
+  text-indent: -9999px;
+  transition: 200ms all;
+  width: .1rem;
+  z-index: 3;
+}
+.swipeContainer .referContainer ul a:hover{
+  background: rgba(255, 255, 255, 0.7);
+}
+.swipeContainer .referContainer ul a:after{
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  bottom: -0.05rem;
+  left: -0.05rem;
+  position: absolute;
+  right: -0.05rem;
+  top: -0.05rem;
+  transition: 200ms all;
+  z-index: 4;
+  opacity: 0;
+}
+.swipeContainer .referContainer ul a.active:after{
+  opacity: 1;
+}
+.swipeContainer .swiper{
+  width: 82%;
+  margin: 0 auto;
+}
+.swipeContainer .swiper .block_inner{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 400ms opacity ease-in-out;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+}
+.swipeContainer .swiper .block_inner .wraper{
+  width: 82%;
+}
+.swipeContainer .swiper .block_inner .wraper .tree{
+  float: left;
+  margin-left: 1.315%;
+  width: 47.37%;
+  margin: 0.54rem auto 0.36rem;
+}
+.tree .svg_holder{
+  height: 0;
+  position: relative;
+  padding-top: 102.5878%;
+}
+.tree .svg_holder svg{
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
