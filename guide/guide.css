@@ -11,7 +11,7 @@
 .swipeContainer .referContainer{
   margin-top: -60px;
   position: fixed;
-  right: 1rem;
+  right: 5%;
   top: 50%;
   width: 0;
   display: flex;
@@ -78,6 +78,8 @@
   margin-left: 1.315%;
   width: 47.37%;
   margin: 0.54rem auto 0.36rem;
+  transition: 400ms opacity ease-in-out;
+  opacity: 0;
 }
 .tree .svg_holder{
   height: 0;
@@ -90,4 +92,49 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+.swipeContainer .swiper{
+  height: 25%;
+}
+.swipeContainer .swiper .content {
+  color: white;
+  font-size: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  justify-content: center;
+  margin-right: 9.64833%;
+  text-align: left;
+  width: 30.70333%;
+  opacity: 0.5;
+  transition: 400ms opacity ease-in-out;
+}
+.swipeContainer .swiper .content h2{
+  font-size: 0.5rem;
+  margin: 0;
+}
+h2{
+  font-family: "FFTisaWebBold", Times, serif;
+}
+.swipeContainer .active .content{
+  opacity: 1
+}
+.swipeContainer .active .tree{
+  opacity: 1!important;
+}
+.tree_stage_1 .stage_2, .tree_stage_1 .stage_3, .tree_stage_1 .stage_4 {
+  opacity: 0
+}
+
+.tree_stage_2 .stage_3, .tree_stage_2 .stage_4 {
+  opacity: 0
+}
+
+.tree_stage_3 .stage_4 {
+  opacity: 0
+}
+
+.tree_stage_4 .background {
+  opacity: 0
 }
